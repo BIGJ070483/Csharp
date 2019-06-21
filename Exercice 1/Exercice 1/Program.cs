@@ -10,18 +10,15 @@ namespace Exercice_1
     {
         static void Main(string[] args)
         {
-
             Console.WriteLine("Bonjour , choisissez un nombre :");
-            String nbuser1 = Console.ReadLine();
+            //String nbuser1 = Console.ReadLine();
             int nombre;
             int.TryParse(Console.ReadLine(), out nombre);
-            for(int i = nombre; i > 0; i--)
+            for(int i = nombre; i > -1; i--)
             {
                 Console.WriteLine(i);
             }
-
             Console.ReadKey();
-          
         }
     }
 }
